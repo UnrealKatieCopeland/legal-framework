@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Framework Overview – Copeland v. Weinstein (141-370402-25)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background: #ffffff;
+            color: #222222;
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #222222;
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #222222;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #555555;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        .intro {
+            font-size: 16px;
+            color: #444444;
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        section {
+            margin-bottom: 50px;
+        }
+        
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #222222;
+            border-bottom: 2px solid #cccccc;
+            padding-bottom: 10px;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 25px;
+        }
+        
+        .grid-item {
+            border: 2px solid #cccccc;
+            padding: 20px;
+            background: #f9f9f9;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .grid-item:hover {
+            background: #f0f0f0;
+            border-color: #888888;
+        }
+        
+        .grid-item h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #222222;
+        }
+        
+        .grid-item-content {
+            display: none;
+            margin-top: 15px;
+            font-size: 15px;
+            color: #444444;
+        }
+        
+        .grid-item-content.active {
+            display: block;
+        }
+        
+        .grid-item-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .grid-item-content li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .grid-item-content li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        .requirements {
+            background: #f5f5f5;
+            border-left: 4px solid #222222;
+            padding: 25px;
+            margin-top: 20px;
+        }
+        
+        .requirements ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .requirements li {
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+            font-size: 16px;
+        }
+        
+        .requirements li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            color: #222222;
+        }
+        
+        .collapsible {
+            background: #e8e8e8;
+            padding: 12px 20px;
+            cursor: pointer;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+        
+        .collapsible:hover {
+            background: #d8d8d8;
+        }
+        
+        .collapsible:after {
+            content: ' ▼';
+            float: right;
+        }
+        
+        .collapsible.active:after {
+            content: ' ▲';
+        }
+        
+        .collapsible-content {
+            display: none;
+            padding: 20px;
+            background: #f9f9f9;
+            border: 1px solid #cccccc;
+            border-top: none;
+        }
+        
+        .collapsible-content.active {
+            display: block;
+        }
+        
+        .quote-box {
+            background: #f9f9f9;
+            border-left: 4px solid #666666;
+            padding: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #333333;
+        }
+        
+        .clarification-box {
+            background: #f0f0f0;
+            border: 3px solid #222222;
+            padding: 30px;
+            margin: 30px 0;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        
+        .clarification-box strong {
+            font-size: 18px;
+            display: block;
+            margin-bottom: 15px;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: #222222;
+            color: #ffffff;
+            padding: 12px 25px;
+            text-decoration: none;
+            margin: 10px 10px 10px 0;
+            border-radius: 4px;
+            font-size: 15px;
+            transition: background 0.3s;
+        }
+        
+        .download-btn:hover {
+            background: #444444;
+        }
+        
+        .exhibits-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 25px;
+        }
+        
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #cccccc;
+            text-align: center;
+            color: #555555;
+            font-size: 15px;
+        }
+        
+        footer p {
+            margin-bottom: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .grid, .exhibits-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Legal Framework Overview</h1>
+            <div class="subtitle">Copeland v. Weinstein (141-370402-25)</div>
+            <div class="subtitle">Summary of Overlapping Federal and State Protections Applicable to This Case</div>
+            <div class="intro">
+                <p>This page summarizes the controlling federal and state authorities triggered in this matter. These protections apply immediately and independently of the litigation posture. The purpose is to provide the Court with a consolidated, neutral overview of the legal frameworks governing disability-related housing conditions, access to justice, and uninhabitable-unit duties.</p>
+            </div>
+        </header>
+
+        <!-- SECTION 2: Four Interlocking Legal Frameworks -->
+        <section>
+            <h2>Four Interlocking Legal Frameworks</h2>
+            <div class="grid">
+                <div class="grid-item" onclick="toggleGrid(this)">
+                    <h3>Federal Fair Housing Act (FHA)</h3>
+                    <div class="grid-item-content">
+                        <ul>
+                            <li>Prohibits discrimination against disabled tenants (42 U.S.C. § 3604).</li>
+                            <li>Requires reasonable accommodations when necessary for equal use and enjoyment.</li>
+                            <li>Prohibits retaliation for asserting rights (42 U.S.C. § 3617).</li>
+                            <li>Duties apply upon notice of disability and need; cannot be delayed.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="grid-item" onclick="toggleGrid(this)">
+                    <h3>Texas Fair Housing Act (TFHA)</h3>
+                    <div class="grid-item-content">
+                        <ul>
+                            <li>Mirrors the federal FHA with parallel standards and enforcement.</li>
+                            <li>Contains the same non-waivable obligations.</li>
+                            <li>State-level violations also trigger independent remedies.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="grid-item" onclick="toggleGrid(this)">
+                    <h3>ADA & Section 504 (Access to Courts)</h3>
+                    <div class="grid-item-content">
+                        <ul>
+                            <li>Title II and Section 504 guarantee meaningful access to courts and legal processes.</li>
+                            <li>Courts must avoid actions that create barriers to participation.</li>
+                            <li>Applies even in civil matters involving critical rights, safety, or benefits.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="grid-item" onclick="toggleGrid(this)">
+                    <h3>Texas Property Code – Unsafe/Uninhabitable Conditions</h3>
+                    <div class="grid-item-content">
+                        <ul>
+                            <li>Landlords owe non-waivable duties once a unit is unsafe.</li>
+                            <li>Constructive eviction principles apply.</li>
+                            <li>Retaliation and self-help conduct are prohibited.</li>
+                            <li>Relevant statutes: Tex. Prop. Code §§ 92.0081, 92.331–.334, 92.056.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: What These Laws Require Right Now -->
+        <section>
+            <h2>What These Laws Require Right Now (No Discretion)</h2>
+            <div class="requirements">
+                <ul>
+                    <li>A landlord cannot require a disabled tenant to remain in unsafe or uninhabitable conditions.</li>
+                    <li>Accommodations must be granted when necessary for equal use and enjoyment.</li>
+                    <li>Retaliation is prohibited (notice of rights → retaliation = violation).</li>
+                    <li>Courts cannot authorize or uphold actions that conflict with federal civil rights laws.</li>
+                    <li>Disability access rights apply to every procedural step.</li>
+                </ul>
+            </div>
+
+            <button class="collapsible" onclick="toggleCollapsible(this)">Legal Citations</button>
+            <div class="collapsible-content">
+                <p><strong>42 U.S.C. §§ 3604, 3617</strong> – Federal Fair Housing Act</p>
+                <p><strong>Tex. Prop. Code §§ 92.331–92.334</strong> – Residential Tenancies</p>
+                <p><strong>ADA Title II, 42 U.S.C. § 12131</strong> – Public Services</p>
+                <p><strong>Section 504, 29 U.S.C. § 794</strong> – Rehabilitation Act</p>
+                <p><strong>HUD/DOJ Joint Statement (2004)</strong> – Reasonable Accommodations Under the Fair Housing Act</p>
+            </div>
+        </section>
+
+        <!-- SECTION 4: HUD/DOJ Joint Statement -->
+        <section>
+            <h2>HUD/DOJ Joint Statement – Highlight Excerpts</h2>
+            <div class="quote-box">
+                <p>"Housing providers have an affirmative obligation to grant reasonable accommodations when necessary for the equal use and enjoyment of a dwelling."</p>
+            </div>
+            <div class="quote-box">
+                <p>"Actions taken against a tenant after asserting fair-housing rights may constitute unlawful retaliation."</p>
+            </div>
+            <div class="quote-box">
+                <p>"Federal law does not permit delaying necessary accommodations once the need is known."</p>
+            </div>
+            <a href="#" class="download-btn">Download Joint Statement (PDF)</a>
+        </section>
+
+        <!-- SECTION 5: Congressional Materials -->
+        <section>
+            <h2>Congressional Materials – Key Excerpts</h2>
+            <div class="quote-box">
+                <p>"Fair housing protections apply with full force where disability, safety, and access are at issue."</p>
+            </div>
+            <div class="quote-box">
+                <p>"Retaliation and obstruction are core violations of federal housing law and require immediate correction."</p>
+            </div>
+            <a href="#" class="download-btn">Download Congressional Materials (PDF)</a>
+        </section>
+
+        <!-- SECTION 6: Clarification Requested -->
+        <section>
+            <h2>Clarification Requested From the Court</h2>
+            <div class="clarification-box">
+                <strong>This request is not a merits ruling.</strong>
+                <p>It is a brief clarification confirming that nothing in this case will be interpreted to authorize conduct inconsistent with the Fair Housing Act, Texas Fair Housing Act, ADA/Section 504 access requirements, or the Texas Property Code's uninhabitable-unit duties. This maintains stability until the scheduled hearing and ensures both parties operate under the same controlling statutes.</p>
+            </div>
+        </section>
+
+        <!-- SECTION 7: Exhibits -->
+        <section>
+            <h2>Exhibits</h2>
+            <div class="exhibits-grid">
+                <a href="#" class="download-btn">Exhibits Part 1</a>
+                <a href="#" class="download-btn">Exhibits Part 2</a>
+                <a href="#" class="download-btn">Proposed Clarification Order</a>
+                <a href="#" class="download-btn">HUD/DOJ Joint Statement</a>
+                <a href="#" class="download-btn">Congressional Materials</a>
+                <a href="#" class="download-btn">Sept 29 Emergency Motion</a>
+                <a href="#" class="download-btn">Sept 29 Proposed TRO</a>
+            </div>
+        </section>
+
+        <!-- SECTION 8: Footer -->
+        <footer>
+            <p><strong>Kathryn "Katie" Copeland</strong></p>
+            <p>K.M.Copeland@tcu.edu</p>
+            <p>Cause No. 141-370402-25</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleGrid(element) {
+            const content = element.querySelector('.grid-item-content');
+            content.classList.toggle('active');
+        }
+
+        function toggleCollapsible(element) {
+            element.classList.toggle('active');
+            const content = element.nextElementSibling;
+            content.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
